@@ -1,0 +1,53 @@
+.container {
+    background: url('paper-texture.jpg'); /* Set your paper texture image */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+h1, h2, h3 {
+    font-family: 'Roboto', sans-serif;
+    color: #f7c6c6; /* Soft pink */
+    text-align: center;
+    transition: color 0.3s;
+}
+
+h1:hover, h2:hover, h3:hover {
+    color: #f3a1a1; /* Light red on hover */
+}
+
+.button {
+    background-color: #a8e1f1; /* Soft blue */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #79c8e8; /* Darker blue on hover */
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.fade-in {
+    animation: fadeIn 1s ease-in;
+}
+
+/* Responsive Design */
+@media(max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+    .button {
+        width: 100%;
+        padding: 15px;
+        font-size: 18px;
+    }
+}
